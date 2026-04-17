@@ -1,4 +1,4 @@
-class Patient:
+class Master:
     def __init__(self,nom):
         self._nom=nom
 
@@ -9,10 +9,10 @@ class Patient:
     @nom.setter
     def nom(self, value):
         self._nom = value
-        
+
     def __str__(self):
-        return f"Nom du patient: {self._nom}"
+        return f"Master: {self._nom}\n "
 
 if __name__ == "__main__":
-    p= Patient("Coumba sarr")
-    print(p)   
+    c = Master("Génie Logiciel et Systèmes Informatiques")
+    print(c)
